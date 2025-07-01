@@ -1,3 +1,4 @@
+// script.js
 let roomId, db, myPlayerRef;
 let isCaller = false;
 
