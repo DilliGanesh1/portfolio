@@ -2,18 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Online Multiplayer Bingo</title>
+  <title>Multiplayer Bingo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Bingo Room: <span id="room-id">...</span></h1>
-  <div id="players">Players: <span id="player-count">0</span>/5</div>
-  <div id="bingo-board"></div>
-  <button id="call-btn" disabled>Call Number</button>
-  <div id="called-numbers">Called: <span id="called-list"></span></div>
+  <h1>Multiplayer Bingo</h1>
+
+  <div id="room-setup">
+    <input type="text" id="room-input" placeholder="Enter Room ID or leave blank">
+    <button id="join-btn">Join Room</button>
+  </div>
+
+  <div id="game-ui" style="display:none;">
+    <h2>Room: <span id="room-id"></span></h2>
+    <div>Players: <span id="player-count">0</span>/5</div>
+    <div id="bingo-board"></div>
+    <button id="call-btn" disabled>Call Number</button>
+    <div>Called Numbers: <span id="called-list"></span></div>
+  </div>
+
+  <!-- Firebase -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+  <!-- Firebase Config -->
   <script src="firebase-config.js"></script>
+
+  <!-- App Logic -->
   <script src="script.js"></script>
 </body>
 </html>
