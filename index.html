@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            text-align: center;
-            
-        }
-        h1{
-            color: blue;
-            
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Online Multiplayer Bingo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Hello world!</h1>
-    
+  <h1>Bingo Room: <span id="room-id">...</span></h1>
+  <div id="players">Players: <span id="player-count">0</span>/5</div>
+  <div id="bingo-board"></div>
+  <button id="call-btn" disabled>Call Number</button>
+  <div id="called-numbers">Called: <span id="called-list"></span></div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
