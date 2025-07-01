@@ -1,28 +1,50 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   text-align: center;
   margin: 20px;
 }
+
+input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 #bingo-board {
   display: grid;
   grid-template-columns: repeat(5, 60px);
-  grid-gap: 5px;
+  gap: 5px;
   justify-content: center;
   margin: 20px auto;
 }
+
 .bingo-cell {
-  background: #eee;
-  padding: 15px;
+  background: #f0f0f0;
   border: 1px solid #ccc;
+  padding: 15px;
   cursor: pointer;
   user-select: none;
 }
+
 .bingo-cell.marked {
-  background: #6c3;
-  color: #fff;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
 }
+
 #call-btn {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
+  margin-top: 20px;
+}
+
+#called-list {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
