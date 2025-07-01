@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+#bingo-board {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+.bingo-cell {
+  background: #eee;
+  padding: 15px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+}
+.bingo-cell.marked {
+  background: #6c3;
+  color: #fff;
+}
+#call-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
